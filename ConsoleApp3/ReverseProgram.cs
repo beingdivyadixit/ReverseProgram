@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    internal class ReverseProgram
+    internal class PalindromeProgram
     {
-        public static void ReverseNumber(int num)
+        public static void PalindromeNumber(int num)
         {
             int rem =0 , rev = 0;
             while (num != 0)
@@ -17,10 +17,18 @@ namespace ConsoleApp3
                 rev = (rev * 10) + rem;
                 num = num / 10;
             }
-            Console.WriteLine("Reverse = "+rev);
+            //Console.WriteLine("Reverse = "+rev);
+            if (num==rev)
+            {
+                Console.WriteLine("its Palindrome");
+            }
+            else
+            {
+                Console.WriteLine("it's not a Palindrome");
+            }
         }
 
-        public static void ReverseWord(string word)
+        public static void PalindromeWord(string word)
         {
             string rev = " ";
             char[] listOfChar = word.ToCharArray();
@@ -29,8 +37,16 @@ namespace ConsoleApp3
                 rev = listOfChar[i] + rev;
             }
 
-            Console.WriteLine("Reverse = "+ rev);
+          //  Console.WriteLine("Reverse = "+ rev);
 
+            if (word == rev)
+            {
+                Console.WriteLine("its Palindrome");
+            }
+            else
+            {
+                Console.WriteLine("it's not a Palindrome");
+            }
         }
      }
 }

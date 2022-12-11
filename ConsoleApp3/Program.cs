@@ -13,12 +13,12 @@ namespace ConsoleApp3
                case 1:
                     Console.WriteLine("Please enter the Number");
                     int num = Convert.ToInt32(Console.ReadLine());
-                    ReverseProgram.ReverseNumber(num);
+                    PalindromeProgram.PalindromeNumber(num);
                     break; 
                 case 2:
                     Console.WriteLine("Please Word the Number");
                     string word = Console.ReadLine();
-                    ReverseProgram.ReverseWord(word);
+                    PalindromeProgram.PalindromeWord(word);
                     break;
                 default:
                     Console.WriteLine("Invalid Input");
