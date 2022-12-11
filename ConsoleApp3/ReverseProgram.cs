@@ -19,5 +19,18 @@ namespace ConsoleApp3
             }
             Console.WriteLine("Reverse = "+rev);
         }
-    }
+
+        public static void ReverseWord(string word)
+        {
+            string rev = " ";
+            char[] listOfChar = word.ToCharArray();
+            for (int i=0; i<listOfChar.Length; i++)
+            {
+                rev = listOfChar[i] + rev;
+            }
+
+            Console.WriteLine("Reverse = "+ rev);
+
+        }
+     }
 }

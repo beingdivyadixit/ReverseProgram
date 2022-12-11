@@ -6,9 +6,24 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter the Number");
-            int num = Convert.ToInt32(Console.ReadLine());
-            ReverseProgram.ReverseNumber(num);
+            Console.WriteLine("Press 1 For Number & Press 2 For Word ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            switch (n)
+            {
+               case 1:
+                    Console.WriteLine("Please enter the Number");
+                    int num = Convert.ToInt32(Console.ReadLine());
+                    ReverseProgram.ReverseNumber(num);
+                    break; 
+                case 2:
+                    Console.WriteLine("Please Word the Number");
+                    string word = Console.ReadLine();
+                    ReverseProgram.ReverseWord(word);
+                    break;
+                default:
+                    Console.WriteLine("Invalid Input");
+                    break;
+            }
         }
     }
 }
