@@ -10,6 +10,7 @@ namespace ConsoleApp3
     {
         public static void PalindromeNumber(int num)
         {
+           int temp=num;
             int rem =0 , rev = 0;
             while (num != 0)
             {
@@ -18,7 +19,7 @@ namespace ConsoleApp3
                 num = num / 10;
             }
             //Console.WriteLine("Reverse = "+rev);
-            if (num==rev)
+            if (temp==rev)
             {
                 Console.WriteLine("its Palindrome");
             }
@@ -30,18 +31,18 @@ namespace ConsoleApp3
 
         public static void PalindromeWord(string word)
         {
-            string rev = " ";
+            string rev = string.Empty, temp = word;
             char[] listOfChar = word.ToCharArray();
             for (int i=0; i<listOfChar.Length; i++)
             {
                 rev = listOfChar[i] + rev;
             }
 
-          //  Console.WriteLine("Reverse = "+ rev);
+           // Console.WriteLine("Reverse = "+ rev);
 
-            if (word == rev)
+            if (temp == rev)
             {
-                Console.WriteLine("its Palindrome");
+                Console.WriteLine("it's Palindrome");
             }
             else
             {
